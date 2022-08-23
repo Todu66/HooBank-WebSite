@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #000;
+    font-family: "Poppins";
+    color: #fff;
+    overflow-x: hidden;
+    
+}
+
+.wrapp {
+    max-width: 1500px;
+}
+
+/* -------#START OF WRAPP#------- */
+
+
+
+/* .vh {
+    height: 100vh;
+}
+ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    
+}
+
+.header img {
+    max-height: 2rem;
+}
+
+.nav_ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav_ul li a {
+    color: #fff;
+    font-weight: 400;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+/* -------------#START OF WRAPP#---------- */
+
+.wrapp_inside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+}
+
+.wrapp_text span{
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+
+
+.wrapp_text h1 {
+    font-size: 3rem;
+}
+
+.wrapp_text p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1rem;
+    
+}
+
+.wrapp_left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3rem;
+}
+
+.wrapp_left img {
+    max-width: 30rem;
+}
+
+.wrapp_right img{
+    float: right;
+    max-width: 35rem;
+}
+
+
+/* #---MOBILE-NAVIGATION-START---# */
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  .icon-mobile-nav {
+    height: 3.8rem;
+    width: 3.8rem;
+    color: #333;
+  }
+  
+  .icon-mobile-nav[name="close-outline"] {
+    display: none;
+  }
+
+
+/* #---------acrivies--------# */
+.activies {
+    display: flex;
+    gap: 4rem;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.activies div {
+    display: flex;
+    align-items: center;
+}
+
+.activies div h5 {
+    font-size: 2rem;
+}
+
+.activies p {
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+
+/* #---------HERO------------# */
+
+/* .hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    align-items: center;
+}
+*/
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 3rem;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+}
+
+.img_col_cta_cta {
+    display: flex;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+.img_col_cta_cta img {
+    cursor: pointer;
+}
+
+.img_col_cta img {
+    max-width: 30rem;
+}
+
+.hero_text h5 {
+    font-size: 2rem;
+    
+}
+
+
+.hero_text p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1rem;
+}
+
+.started {
+    background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
+    border-radius: 10px;    
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-style: none;
+}
+
+.started a {
+    color: #000;
+    font-weight: 500;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    
+
+}
+
+.desc img {
+    max-width: 5rem;
+}
+
+.desc_txt p:nth-child(2) {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.desc:hover {
+    background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101D 95.11%);
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+    border-radius: 20px;
+    padding: 1rem;
+} 
+
+.img_col img {
+    max-width: 30rem;
+}
+
+/* #--------cta------# */
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    margin-top: 4rem;
+    
+}
+
+.cta p:nth-child(1) {
+    font-size: 2.3rem;
+}
+
+.cta p:nth-child(2) {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* #--------THREE_col--------# */
+
+.three-col {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    transition: ;
+}
+
+.col_text:hover {
+    background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 20px;
+    
+}
+
+.col_text {
+    padding: 2rem;
+}
+
+.three_img {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.three_img img {
+    max-width: 5rem;
+}
+
+
+/* #-------compaines--------# */
+
+.companies {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.companies img {
+    max-width: 12rem;
+}
+
+.first-p {
+    margin-top: 2rem;
+}
+
+.service {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    align-items: center;
+    margin-top: 4rem;
+
+
+}
+
+.servc_txt p:nth-child(1) {
+    font-size: 2rem;
+}
+
+.servc_txt p:nth-child(2) {
+    color: rgba(255, 255, 255, 0.7);
+}
+/* #-------footer-------# */
+
+.all_footer {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+
+footer ul li a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.left_footer p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.left_footer div img  {
+    width: 12rem;
+}
+
+.down_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    margin-top: 1rem;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon {
+    color: #fff;
+    font-size: 1.2rem;
+}
